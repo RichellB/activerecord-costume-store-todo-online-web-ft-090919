@@ -1,10 +1,10 @@
 # Create your haunted_houses migration here
 class CreateHauntedHouses < ActiveRecord::Migration[5.1]
   def change 
-    create_table :costume_stores do |t|
+    create_table :haunted_houses do |t|
       t.string :name 
       t.text :location
-      t.integer :costume_inventory
+      t.integer :price
       t.integer :num_of_employees
       t.boolean :still_in_business
       t.datetime :opening_time
